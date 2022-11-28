@@ -1,0 +1,20 @@
+{
+  "name": "@takayoshiotake/color-toning",
+  "version": "1.0.0-alpha.1",
+  "private": false,
+  "description": "A library of color toning.",
+  "main": "./src/index.js",
+  "type":"module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takayoshiotake/npm-color-toning.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "takayoshiotake",
+  "license": "MIT",
+  "publishConfig": {
+    "access":"public"
+  }
+}
