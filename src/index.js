@@ -69,3 +69,13 @@ export function lightness(rgbColor, amount) {
   hslColor[2] = Math.min(Math.max(hslColor[2], 0), 1);
   return toString(convert_hsl_to_rgb(hslColor));
 }
+
+export function hueRotate(rgbColor, degree) {
+  if (typeof(rgbColor) === "string") {
+    rgbColor = parseColor(rgbColor);
+  }
+  const hslColor = convert_rgb_to_hsl(rgbColor);
+  hslColor[0] += degree;
+  hslColor[0] %= 360;
+  return toString(convert_hsl_to_rgb(hslColor));
+}
