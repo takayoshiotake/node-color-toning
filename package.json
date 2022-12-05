@@ -13,7 +13,6 @@
   },
   "author": "takayoshiotake",
   "license": "MIT",
-  "private": false,
   "publishConfig": {
     "access": "public"
   }
