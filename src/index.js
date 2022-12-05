@@ -77,5 +77,18 @@ export function hueRotate(rgbColor, degree) {
   const hslColor = convert_rgb_to_hsl(rgbColor);
   hslColor[0] += degree;
   hslColor[0] %= 360;
+  if (hslColor[0] < 0) {
+    hslColor[0] += 360;
+  }
+  return toString(convert_hsl_to_rgb(hslColor));
+}
+
+export function saturate(rgbColor, amount) {
+  if (typeof(rgbColor) === "string") {
+    rgbColor = parseColor(rgbColor);
+  }
+  const hslColor = convert_rgb_to_hsl(rgbColor);
+  hslColor[1] += amount;
+  hslColor[1] = Math.min(Math.max(hslColor[1], 0), 1);
   return toString(convert_hsl_to_rgb(hslColor));
 }
