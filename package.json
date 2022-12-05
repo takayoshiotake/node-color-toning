@@ -1,7 +1,6 @@
 {
   "name": "@takayoshiotake/color-toning",
   "version": "1.0.0-alpha.2",
-  "private": false,
   "description": "A library of color toning.",
   "main": "./src/index.js",
   "type": "module",
@@ -14,6 +13,7 @@
   },
   "author": "takayoshiotake",
   "license": "MIT",
+  "private": false,
   "publishConfig": {
     "access": "public"
   }
