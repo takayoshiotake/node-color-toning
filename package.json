@@ -1,6 +1,6 @@
 {
   "name": "@takayoshiotake/color-toning",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "A library of color toning.",
   "main": "./src/index.js",
   "type": "module",
